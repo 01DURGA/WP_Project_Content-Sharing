@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Upload
+{% endblock %}
+
+{% block content %}
+<span class="hello-msg">Hello, user!!!</span>
+<span ><a  class="hello-msg" href="#">Logout</a></span>
+       
+<div class="row">
+	<div class="col-md-5">
+		<div class="card card-body"><br>
+			<h2>Binary Configuration</h2><br>
+			<form method='GET' action='' style="display: table-cell;text-align: center; vertical-align: middle;">
+                <table>
+                    <tr><th>Software : </th><td><input type="file" id="myFile" name="filename" required></td></tr>
+                    <tr><th>Version Details : </th><td><input type="text" placeholder="enterdetails.." name="Version" required></td></tr>
+                    <tr><th>Binary File : </th><td><input type="file" id="myFile" name="filename" required></td></tr>
+                    <tr><th>Requirements : </th><td><input type="text" placeholder="enterdetails.." name="Requirements" required></td></tr>
+                    <tr><th>Description : </th><td><input type="text" placeholder="enterdetails.." name="Description" required></td></tr>
+                    <tr><th>Folder path : </th><td><input type="text" placeholder="enterdetails.." name="Path" required></td></tr>
+                </table>
+                <br><br>
+                <button type="submit" value="submit">submit</button>
+            </form>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
